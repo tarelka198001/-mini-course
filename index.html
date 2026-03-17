@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ключ к молодости — мини‑курс</title>
+  <title>Ключ к молодости — курс</title>
   <style>
     :root{
       --bg:#0b1220;
@@ -11,16 +11,23 @@
       --text:#eaf0ff;
       --muted:#b9c3df;
       --line:rgba(255,255,255,.10);
+      --accent:#7aa2ff;
     }
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);}
-    .wrap{max-width:900px;margin:0 auto;padding:24px 16px 64px;}
-    h1{font-size:28px;margin:0 0 6px;}
-    .sub{margin:0 0 20px;color:var(--muted);line-height:1.45}
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
+    .wrap{max-width:920px;margin:0 auto;padding:26px 16px 70px;}
+    header h1{margin:0 0 8px;font-size:30px;line-height:1.15}
+    header p{margin:0 0 18px;color:var(--muted);line-height:1.45}
 
     .section-title{
-      margin:22px 0 10px;
-      font-size:14px;
-      letter-spacing:.06em;
+      margin:20px 0 10px;
+      font-size:13px;
+      letter-spacing:.08em;
       text-transform:uppercase;
       color:var(--muted);
     }
@@ -33,9 +40,15 @@
       margin:12px 0;
     }
 
-    .msg-title{font-weight:800;margin:0 0 10px;font-size:18px;}
-    .msg{white-space:pre-wrap;line-height:1.55;color:var(--text);}
-    .msg .muted{color:var(--muted);}
+    .msg-title{font-weight:850;margin:0 0 10px;font-size:18px;}
+    .msg{white-space:pre-wrap;line-height:1.6;color:var(--text);margin:0}
+    .msg + .msg{margin-top:10px}
+
+    ul,ol{margin:10px 0 0 22px}
+    li{margin:6px 0}
+
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
 
     .video{
       position:relative;
@@ -47,103 +60,506 @@
       border:1px solid rgba(255,255,255,.08);
       margin-top:12px;
     }
-    .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
-    hr.sep{border:0;border-top:1px solid var(--line);margin:18px 0;}
-    .small{color:var(--muted);font-size:13px;margin-top:18px;}
+    .video.ratio-181{padding-top:181.82%}
+    .video.ratio-18276{padding-top:182.76%}
+    .video.ratio-17727{padding-top:177.27%}
+    .video.ratio-100{padding-top:100%}
+    .video.ratio-75{padding-top:75%}
+
+    .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .divider{height:1px;background:var(--line);margin:14px 0}
+    .note{color:var(--muted);font-size:13px;line-height:1.45;margin:10px 0 0}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Ключ к молодости</h1>
-    <p class="sub">Стартовые сообщения и первые материалы (перенесено из Telegram).</p>
+    <header>
+      <h1>Ключ к молодости — курс</h1>
+      <p>Материалы курса собраны в одну страницу. Видео встроены через Vimeo.</p>
+    </header>
 
-    <div class="section-title">Введение</div>
+    <div class="section-title">Организационное</div>
     <div class="card">
-      <div class="msg">
-Здравствуйте! Я рад видеть вас в этом чате 🤎
-
-Завтра стартует марафон «Ключ к молодости» 🗝, 2 недели мы будем делиться вниманием и заботу о себе любимым 🙏🏼
-      </div>
-
-      <hr class="sep" />
-
-      <div class="msg">
-Хочу сразу сориентировать вас по расписанию📅
-
-🖇 Каждое утро вы будете получать свежие видео с лекциями и упражнениями
-
-🖇 По пн, ср и пт в 19:00 по мск — прямой эфир
-
-▪️ На эфире я буду освещать темы, которые даю в видео, более глубоко,
-▪️ отвечать на вопросы
-▪️ и в онлайн формате проверять и ставить технику выполнения упражнения
-✅ Запись эфира будет.
-
-По выходным — отдыхаем, выполняем упражнения, делимся в чате настроением, задаем вопросы☺️
-      </div>
+      <p class="msg">Хочу сразу сориентировать вас по расписанию</p>
+      <ul>
+        <li>Каждое утро вы будете получать свежие видео с лекциями и упражнениями</li>
+        <li>По пн, ср и пт в 19:00 по мск — прямой эфир</li>
+      </ul>
+      <p class="msg">На эфире я буду освещать темы, которые даю в видео, более глубоко, отвечать на вопросы и в онлайн формате проверять и ставить технику выполнения упражнения. Запись эфира будет.</p>
+      <p class="msg">По выходным — отдыхаем, выполняем упражнения, делимся в чате настроением, задаем вопросы.</p>
     </div>
 
     <div class="section-title">Урок 1</div>
     <div class="card">
       <div class="msg-title">РЕАЛЬНЫЕ ПРИЧИНЫ СТАРЕНИЯ ЛИЦА</div>
-      <div class="msg">
-Главные причины старения лица находятся под кожей и слоем мышц!.
+      <p class="msg">Главные причины старения лица находятся под кожей и слоем мышц!</p>
+      <p class="msg">Фундамент молодости — это череп — он служит основой для мышц, к которому они крепятся.
+Особенность строения лица в том — что мышцы одной своей частью крепятся к кости, другой — к коже.
+Изменения костной ткани на 0,1 мм может проявиться на лице (через мышцы и кожу) — на целый 1 мм, т.е. в 10 раз больше.</p>
 
-Фундамент молодости — это череп — он служит основой для мышц, к которому они крепятся.
-Особенность строения лица в том — что мышцы одной своей частью крепятся кости, другой — к коже.
-Изменения костной ткани на 0,1 мм может проявиться на лице (через мышцы и кожу) — на целый 1 мм, т.е. в 10 раз больше.
-      </div>
-
-
-<div style="padding:181.82% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173830240?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="1_IMG_2237 (1) [skladchik.org]"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-      <div class="msg">
-• ПЕРВАЯ ПРИЧИНА
-когда из-за напряженной шеи ухудшается кровоснабжение и лимфоток в голове, и на лице в частности. — то мозг забирает для себя весь ресурс, не оставляя лицу практически ничего. Тогда мягкие ткани (мышцы, фасции, кожа) — начинают использовать кости как ресурс минералов, микроэлементов, воды. С течением времени этот ресурс не восстанавливается — кости черепа начинают уменьшаться в объеме.
-это влечет за собой движение внутрь верхней челюсти, движение скуловых костей — к носу, уменьшение глазниц и потерю общего объема костной ткани.
-соответственно, если скуловая кость уходит к носу, то большая и малая скуловые мышцы, крепящиеся к малой части скуловой кости — начинают провисать, опуская щеки вниз.
-Глазное яблоко уходит глубже, внутрь в череп, тем самым глазницы становятся меньше, и верхние веки начинают нависать.
-Потому что, скуловые кости и кости верхней челюсти ответственны за горизонтальную ориентацию лица, и при их деформации, которые начинаются примерно с 30ти лет, и только ускоряется с возрастом, лицо теряет объем.
-
-• ВТОРАЯ ПРИЧИНА
-На лице есть два височно-нижнечелюстных сустава (далее ВНЧС), правый и левый.
-Во время жевания, разговора, стресса - внчс изнашиваются : нижняя челюсть поднимается выше — а подбородок заваливается. и вертикальный объем лица уменьшается контур уходит - брыли приходят.
-
-• 3 и 4 ПРИЧИНА
-Гипертонус (напряжение) и гипотонус (расслабление) - мышц лица. на их стыке возникают самые глубокие морщины.
-МЫШЦЫ, НАХОДЯЩИЕСЯ В ГИПЕР ТОНУСЕ:
-- мышца, поддерживающая бровь,
-- мышца гордеца,
-- жевательная мышца,
-- круговая мышца рта,
-МЫШЦЫ, НАХОДЯЩИЕСЯ В ГИПОТОНУСЕ:
-- мышца гордеца,
-- лобно-затылочная,
-- круговая мышца глаза,
-- мышцы шеи,
-- платизма
-ПРИМЕР ВОЗНИКНОВЕНИЯ МОРЩИН НА ЛБУ: лобная кость стремится вниз, уменьшая швы с нижней группой костей; лобно-затылочная мышца в гипотонусе сползает вниз, мышца — поддерживающая бровь — напрягается. Чем больше сопротивление — тем глубже морщины.
-ПРИМЕР ВОЗНИКНОВЕНИЯ НОСОГУБНОЙ СКЛАДКИ : скуловая кость устремляется к носу, мышцы щеки в гипотонусе устремляются вниз и натыкаются на напряженную круговую мышцу рта.
-      </div>
-    </div>
-
-    <!-- ===== ШАБЛОН ДЛЯ СЛЕДУЮЩИХ УРОКОВ (копируйте блок целиком) =====
-    <div class="section-title">Урок N</div>
-    <div class="card">
-      <div class="msg-title">ЗАГОЛОВОК</div>
-      <div class="msg">Текст до видео…</div>
-
-      <div class="video">
+      <!-- Видео 1 -->
+      <div class="video ratio-181">
         <iframe
-          src="https://player.vimeo.com/video/VIDEO_ID_N"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen>
+          src="https://player.vimeo.com/video/1174297911?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 1">
         </iframe>
       </div>
 
-      <div class="msg">Текст после видео…</div>
+      <p class="msg">• ПЕРВАЯ ПРИЧИНА
+когда из-за напряженной шеи ухудшается кровоснабжение и лимфоток в голове, и на лице в частности — то мозг забирает для себя весь ресурс, не оставляя лицу практически ничего. Тогда мягкие ткани (мышцы, фасции, кожа) — начинают использовать кости как ресурс минералов, микроэлементов, воды. С течением времени этот ресурс не восстанавливается — кости черепа начинают уменьшаться в объеме.
+это влечет за собой движение внутрь верхней челюсти, движение скуловых костей — к носу, уменьшение глазниц и потерю общего объема костной ткани.
+соответственно, если скуловая кость уходит к носу, то большая и малая скуловые мышцы, крепящиеся к малой части скуловой кости — начинают провисать, опуская щеки вниз.
+Глазное яблоко уходит глубже, внутрь в череп, тем самым глазницы становятся меньше, и верхние веки начинают нависать.
+Потому что, скуловые кости и кости верхней челюсти ответственны за горизонтальную ориентацию лица, и при их деформации, которые начинаются примерно с 30ти лет, и только ускоряется с возрастом, лицо теряет объем.</p>
+
+      <p class="msg">• ВТОРАЯ ПРИЧИНА
+На лице есть два височно-нижнечелюстных сустава (далее ВНЧС), правый и левый.
+Во время жевания, разговора, стресса — внчс изнашиваются: нижняя челюсть поднимается выше — а подбородок заваливается. и вертикальный объем лица уменьшается, контур уходит — брыли приходят.</p>
+
+      <p class="msg">• 3 и 4 ПРИЧИНА
+Гипертонус (напряжение) и гипотонус (расслабление) — мышц лица. На их стыке возникают самые глубокие морщины.</p>
+
+      <p class="msg">МЫШЦЫ, НАХОДЯЩИЕСЯ В ГИПЕР ТОНУСЕ:</p>
+      <ul>
+        <li>мышца, поддерживающая бровь,</li>
+        <li>мышца гордеца,</li>
+        <li>жевательная мышца,</li>
+        <li>круговая мышца рта,</li>
+      </ul>
+
+      <p class="msg">МЫШЦЫ, НАХОДЯЩИЕСЯ В ГИПОТОНУСЕ:</p>
+      <ul>
+        <li>мышца гордеца,</li>
+        <li>лобно-затылочная,</li>
+        <li>круговая мышца глаза,</li>
+        <li>мышцы шеи,</li>
+        <li>платизма</li>
+      </ul>
+
+      <p class="msg">ПРИМЕР ВОЗНИКНОВЕНИЯ МОРЩИН НА ЛБУ: лобная кость стремится вниз, уменьшая швы с нижней группой костей; лобно-затылочная мышца в гипотонусе сползает вниз, мышца — поддерживающая бровь — напрягается. Чем больше сопротивление — тем глубже морщины.
+ПРИМЕР ВОЗНИКНОВЕНИЯ НОСОГУБНОЙ СКЛАДКИ: скуловая кость устремляется к носу, мышцы щеки в гипотонусе устремляются вниз и натыкаются на напряженную круговую мышцу рта.</p>
     </div>
-    ===== /ШАБЛОН ===== -->
+
+    <div class="section-title">Урок 2</div>
+    <div class="card">
+      <p class="msg">Здравствуйте! Утро предлагаю начать с короткого комплекса</p>
+
+      <div class="divider"></div>
+
+      <div class="msg-title">РАБОТАЕМ С ФУНДАМЕНТОМ МОЛОДОСТИ: ОСВОИМ ОСТЕОПАТИЮ ЛИЦА</div>
+      <p class="msg">Движение — это жизнь. Это относится и к казалось бы, неподвижной части нашего тела — кости.</p>
+
+      <ul>
+        <li>Кости черепа тоже двигаются относительно друг друга, только амплитуда их значительно меньше, чем мышц и фасций.</li>
+        <li>Нужно постараться, чтобы это движение заметить. Если ощущения движения пришло — то им уже можно управлять, помогая костям черепа возвращаться на исходное положение молодости.</li>
+        <li>Движения костей черепа привязаны к ритму дыхания:
+          <ul>
+            <li>на вдохе — напряжение</li>
+            <li>на выдохе — расслабление</li>
+            <li>вдох — сужение, выдох — расширение</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p class="msg">На практических занятиях я прилагаю максимум, чтобы вы почувствовали это движение.
+Работа с глазницами, скуловой костью, верхней челюстью: на выдохе необходимо сопровождать движение костей на расширение, на вдохе — удерживать и не давать вернуться костям в исходное состояние.
+Через 2 недели тело привыкнет, и начнет поддерживать амплитуду на автомате.</p>
+
+      <!-- Видео 2 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174297944?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 2">
+        </iframe>
+      </div>
+
+      <p class="msg">Досмотрели видео до конца? В финале я даю задание: привязать упражнения к повседневным действиям.</p>
+      <p class="msg">Выделять специально на работу с лицом даже 30 минут в день — сложно. Но если упражнения привязать к рутине, то они останутся с вами навсегда.</p>
+    </div>
+
+    <div class="section-title">Урок 3</div>
+    <div class="card">
+      <p class="msg">Сегодня вечером предлагаю вам создать образ</p>
+      <p class="msg">Это важная письменная практика. Она поможет создать ориентир, к которому вы придете.</p>
+      <p class="msg">Важно! Описывая свой будущий образ — создавайте! Ничего лишнего в вас нет. Поэтому ничего убирать не надо.</p>
+
+      <!-- Видео 3 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174297982?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 3">
+        </iframe>
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="msg">Запись прямого эфира:</p>
+      <!-- Эфир тоже как видео №4 -->
+      <div class="video">
+        <iframe
+          src="https://player.vimeo.com/video/1174297997?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 4">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Часть 1/5 заканчивается здесь. Следом будет Часть 2/5 -->
+        <div class="section-title">Урок 4</div>
+    <div class="card">
+      <p class="msg">Доброе утро! ☺️ Сегодня — важный день.</p>
+      <p class="msg">Работать будем с глазами. Глаза — это то, что в первую очередь “считывается” как молодость/усталость.</p>
+
+      <!-- Видео 5 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298014?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 5">
+        </iframe>
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="msg">Задание на сегодня: наблюдайте за собой в течение дня — где вы “держите” напряжение (лоб, глаза, челюсть, шея). Замечать — уже половина работы.</p>
+    </div>
+
+    <div class="section-title">Урок 5</div>
+    <div class="card">
+      <p class="msg">Доброе утро! Продолжаем.</p>
+
+      <!-- Видео 6 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298031?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 6">
+        </iframe>
+      </div>
+
+      <p class="msg">После выполнения — дайте лицу “осесть” 1–2 минуты в спокойном дыхании.</p>
+
+      <div class="divider"></div>
+
+      <p class="msg">Запись прямого эфира:</p>
+      <!-- Эфир как видео №7 -->
+      <div class="video">
+        <iframe
+          src="https://player.vimeo.com/video/1174298045?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 7">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="section-title">Урок 6</div>
+    <div class="card">
+      <p class="msg">Доброе утро! Сегодня продолжаем работу с лицом через шею и осанку.</p>
+
+      <!-- Видео 8 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298060?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 8">
+        </iframe>
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="msg">Если хочется — сделайте комплекс второй раз вечером, но мягко, без усилия “через боль”.</p>
+    </div>
+
+    <div class="section-title">Урок 7</div>
+    <div class="card">
+      <p class="msg">Доброе утро! Сегодня — работа с челюстью (ВНЧС).</p>
+
+      <!-- Видео 9 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298077?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 9">
+        </iframe>
+      </div>
+
+      <p class="msg">Отмечайте, где вы стискиваете зубы в течение дня (стресс, концентрация, телефон) — и каждый раз мягко отпускать челюсть.</p>
+
+      <div class="divider"></div>
+
+      <p class="msg">Запись прямого эфира:</p>
+      <!-- Эфир как видео №10 -->
+      <div class="video">
+        <iframe
+          src="https://player.vimeo.com/video/1174298090?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 10">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="section-title">Урок 8</div>
+    <div class="card">
+      <p class="msg">Доброе утро! Сегодня закрепляем и добавляем ещё один важный элемент.</p>
+
+      <!-- Видео 11 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298102?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 11">
+        </iframe>
+      </div>
+
+      <p class="msg">Важнее регулярность, чем “идеальная техника”. Делайте в своём темпе.</p>
+    </div>
+
+    <!-- Часть 2/5 заканчивается здесь. Следом будет Часть 3/5 -->
+        <div class="section-title">Урок 9</div>
+    <div class="card">
+      <p class="msg">Пример — ты эмоции проживают злость, ум в силу воспитания запрещает это проживать и от этого спазмируется печень, она через фасцию передаёт напряжение на тазобедренные и плечевые суставы, на жевательную мышцу и область межбровья!</p>
+
+      <p class="msg">В итоге ставя блокады в плечё или ботекс в лоб мы не решаем причину, а лишь временно снимаем симптомы.</p>
+
+      <p class="msg">Работать необходимо комплексно выстраивая согласие ума и эмоций, воздействия на печень и далее по списку. Мой 20 летний опыт ежедневно доказывает, что данный подход наиболее эффективен в работе со здоровьем!</p>
+
+      <p class="msg">Обращаю ваше внимание — не лечение болезней, а работа со здоровьем.</p>
+
+      <p class="msg">И ещё пища для размышления: святая троица о которой я упоминал выше находится в словах — раСТРОИТЬСЯ, наСТРОИТЬСЯ, уСТРОИТЬСЯ и так далее!)) Можете сами накидать примеров!))</p>
+    </div>
+
+    <div class="section-title">Видео-блок</div>
+    <div class="card">
+      <div class="msg-title">АНГЕЛ ВАМ В ПОМОЩЬ!)</div>
+
+      <!-- Видео 12 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298122?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 12">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="section-title">Видео-блок</div>
+    <div class="card">
+      <div class="msg-title">Вся остеопатия лица в двух видео</div>
+
+      <!-- Видео 13 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298138?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 13">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="section-title">Урок 10</div>
+    <div class="card">
+      <p class="msg">Доброе утро! Продолжаем.</p>
+
+      <!-- Видео 14 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298154?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 14">
+        </iframe>
+      </div>
+
+      <p class="msg">Сделайте комплекс и отметьте ощущения: где стало легче, где ещё “держит”.</p>
+
+      <div class="divider"></div>
+
+      <p class="msg">Запись прямого эфира:</p>
+      <!-- Эфир как видео №15 -->
+      <div class="video">
+        <iframe
+          src="https://player.vimeo.com/video/1174298172?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 15">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Часть 3/5 заканчивается здесь. Следом будет Часть 4/5 -->
+    
+        <div class="section-title">Урок 11</div>
+    <div class="card">
+      <p class="msg">Доброе утро! Сегодня работаем с расслаблением и восстановлением ресурса.</p>
+
+      <!-- Видео 16 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298194?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 16">
+        </iframe>
+      </div>
+
+      <p class="msg">После комплекса — 1–2 минуты спокойного дыхания, чтобы тело “закрепило” результат.</p>
+    </div>
+
+    <div class="section-title">Урок 12</div>
+    <div class="card">
+      <p class="msg">Доброе утро! Закрепляем пройденное и собираем всё в систему.</p>
+
+      <!-- Видео 17 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298211?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 17">
+        </iframe>
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="msg">Запись прямого эфира:</p>
+      <!-- Эфир как видео №18 -->
+      <div class="video">
+        <iframe
+          src="https://player.vimeo.com/video/1174298228?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 18">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="section-title">Урок 13</div>
+    <div class="card">
+      <p class="msg">Доброе утро! Сегодня — практика на закрепление и мягкую интеграцию в день.</p>
+
+      <!-- Видео 19 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298246?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 19">
+        </iframe>
+      </div>
+
+      <p class="msg">Главная цель — сделать так, чтобы упражнения стали частью повседневности.</p>
+    </div>
+
+    <div class="section-title">Урок 14</div>
+    <div class="card">
+      <p class="msg">Доброе утро! Предпоследний блок — собираем результаты и выстраиваем план на будущее.</p>
+
+      <!-- Видео 20 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298261?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 20">
+        </iframe>
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="msg">Запись прямого эфира:</p>
+      <!-- Эфир как видео №21 -->
+      <div class="video">
+        <iframe
+          src="https://player.vimeo.com/video/1174298278?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 21">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Часть 4/5 заканчивается здесь. Следом будет Часть 5/5 -->
+        <div class="section-title">Финал</div>
+    <div class="card">
+      <p class="msg">Спасибо, что были в процессе. Сохраните себе эту страницу — и возвращайтесь к материалам в удобном темпе.</p>
+
+      <div class="divider"></div>
+
+      <p class="msg">Финальное видео:</p>
+      <!-- Видео 22 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298296?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 22">
+        </iframe>
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="msg">Дополнительные материалы:</p>
+
+      <!-- Видео 23 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298314?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 23">
+        </iframe>
+      </div>
+
+      <!-- Видео 24 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298330?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 24">
+        </iframe>
+      </div>
+
+      <!-- Видео 25 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298346?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 25">
+        </iframe>
+      </div>
+
+      <!-- Видео 26 -->
+      <div class="video ratio-181">
+        <iframe
+          src="https://player.vimeo.com/video/1174298362?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Видео 26">
+        </iframe>
+      </div>
+
+      <p class="note">Если какое-то видео не проигрывается на GitHub Pages — проверь настройки Vimeo: разрешён ли Embed для домена <code>*.github.io</code>.</p>
+    </div>
 
   </div>
 </body>
 </html>
+    
